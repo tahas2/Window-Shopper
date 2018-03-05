@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Window_Shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-N1-qxU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.9843938946723938" green="0.98093825578689575" blue="0.95162636041641235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-eH-f2h">
+                                <rect key="frame" x="152.5" y="70" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="5fn-Oz-zCk"/>
+                                    <constraint firstAttribute="width" constant="70" id="70O-O5-LsX"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-Bb-lrv" customClass="CurrencyTxtField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="210" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zlz-Vx-HlU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" smartInsertDeleteType="yes"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fA8-P7-whA" customClass="CurrencyTxtField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="285" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vev-Sn-jua"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="yes"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d7-Rb-khf">
+                                <rect key="frame" x="20" y="380" width="335" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="0.039215686274509803" green="0.78431372549019607" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours of work required to purchase this item." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eif-3Z-HmQ">
+                                <rect key="frame" x="16" y="447.5" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="2on-NU-SrH"/>
+                                    <constraint firstAttribute="height" constant="21" id="vzd-xK-m3G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-1g-bh7">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b1T-wb-www"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="CLEAR">
+                                    <color key="titleColor" red="0.039215686274509803" green="0.78431372549019607" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hde-sd-uiq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rbe-N1-qxU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2ym-Lf-mEz"/>
+                            <constraint firstItem="Ba9-eH-f2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="31m-JW-0ev"/>
+                            <constraint firstItem="Ith-Bb-lrv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4H8-BX-eDV"/>
+                            <constraint firstItem="7d7-Rb-khf" firstAttribute="top" secondItem="fA8-P7-whA" secondAttribute="bottom" constant="45" id="4tN-ug-u72"/>
+                            <constraint firstItem="eif-3Z-HmQ" firstAttribute="top" secondItem="7d7-Rb-khf" secondAttribute="bottom" constant="5" id="8Zr-vI-f1G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8oM-1g-bh7" secondAttribute="trailing" constant="20" id="D5x-C2-ptE"/>
+                            <constraint firstItem="7d7-Rb-khf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FWp-0Y-1sP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ith-Bb-lrv" secondAttribute="trailing" constant="20" id="HBu-AF-ohK"/>
+                            <constraint firstItem="Ith-Bb-lrv" firstAttribute="top" secondItem="Ba9-eH-f2h" secondAttribute="bottom" constant="70" id="IvS-VP-KNa"/>
+                            <constraint firstItem="rbe-N1-qxU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qpt-Dx-lUj"/>
+                            <constraint firstItem="fA8-P7-whA" firstAttribute="trailing" secondItem="Ith-Bb-lrv" secondAttribute="trailing" id="VA7-mZ-Nag"/>
+                            <constraint firstItem="fA8-P7-whA" firstAttribute="height" secondItem="Ith-Bb-lrv" secondAttribute="height" id="Xdo-sC-pg8"/>
+                            <constraint firstItem="7d7-Rb-khf" firstAttribute="width" secondItem="fA8-P7-whA" secondAttribute="width" id="Ylq-2e-yki"/>
+                            <constraint firstItem="eif-3Z-HmQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcS-GO-n78"/>
+                            <constraint firstItem="8oM-1g-bh7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="deI-0z-AgG"/>
+                            <constraint firstItem="Ba9-eH-f2h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4h-9v-uEf"/>
+                            <constraint firstItem="fA8-P7-whA" firstAttribute="leading" secondItem="Ith-Bb-lrv" secondAttribute="leading" id="hEx-dY-2jg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8oM-1g-bh7" secondAttribute="bottom" constant="20" id="oEo-vj-mgH"/>
+                            <constraint firstItem="rbe-N1-qxU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qYY-f4-hKD"/>
+                            <constraint firstItem="fA8-P7-whA" firstAttribute="top" secondItem="Ith-Bb-lrv" secondAttribute="bottom" constant="25" id="sJY-ci-sL4"/>
+                            <constraint firstItem="rbe-N1-qxU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wco-YO-ZMk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="fA8-P7-whA" id="xV0-nW-S5B"/>
+                        <outlet property="result" destination="7d7-Rb-khf" id="flr-HR-GfN"/>
+                        <outlet property="resulttxt" destination="eif-3Z-HmQ" id="GBW-fs-jYe"/>
+                        <outlet property="wageTxt" destination="Ith-Bb-lrv" id="lYv-rw-q8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG" width="314" height="412"/>
+        <image name="windowShopperIcon" width="115" height="115"/>
+    </resources>
+</document>
